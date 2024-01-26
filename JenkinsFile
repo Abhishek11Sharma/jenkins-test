@@ -12,4 +12,17 @@ pipeline{
            }
         }
     }
+
+    post{
+        always{
+            sh ' echo "printning message" '
+        }
+        success{
+            sh 'echo "success" '
+        }
+
+        failure{
+            sh 'echo "failure" '
+        }
+    }
 }
