@@ -4,9 +4,9 @@ pipeline{
     tools{
         maven "maven"
     }
-    environment{
-        
-    }
+    // environment{
+
+    // }
     stages{
         stage('compile'){
             steps{
